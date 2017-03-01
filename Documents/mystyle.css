@@ -1,0 +1,79 @@
+ul {
+  margn: 0px;
+  padding: 0px;
+  font-family: AR DARLING;
+ min-width: 100%;
+
+  margin: auto;
+    
+}
+
+
+
+ul li {
+  background-color: #1a5276;
+  border: 0px dashed goldenrod;
+  
+ height: 80px;
+  width: 170px;
+  line-height: 40px;
+  text-align: center;
+  
+     
+  list-style: none;
+  list-style-type: none
+    
+}
+
+a {
+  color: white;
+  text-decoration: none;
+    
+}
+
+ul li a:hover {
+  background-color: #CB4335;
+  display: block;
+  transition: all 0.45s;
+  opacity: 0.5;
+  filter: alpha(opacity=70);
+right:1000px;
+
+    
+}
+
+ul li ul li {
+
+
+    
+ width: 1000px;
+
+
+height:200px;
+
+top:-2%;
+    
+
+
+    
+
+    background-color: #1a5276;
+    display:none;
+
+
+    
+}
+
+ul li:hover ul li {
+  display: block;
+
+}
+
+    
+
+
+
+
+
+
+
