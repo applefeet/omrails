@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby "2.2.6"
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -18,10 +19,15 @@ gem 'bootstrap', '~> 4.0.0.alpha6'
 
 group :development, :test do
   gem 'byebug', platform: :mri
+  gem 'sqlite3'
 end
 
 group :development do
   gem 'web-console', '>= 3.3.0'
+end
+
+group :production do
+	gen 'pg'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
